@@ -13,7 +13,7 @@
     	
 window.addEventListener('load', function() {
 $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
-  console.log(JSON.stringify(data, null, 2));
+  alert(JSON.stringify(data, null, 2));
 });
     })
     </script>
