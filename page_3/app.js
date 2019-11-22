@@ -4,7 +4,7 @@
 //   registration.unregister()
 // } })
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/page_3/sw.js', { scope: '/page_3/' }).then(function(reg) {
+  navigator.serviceWorker.register('jj_web/page_3/sw.js', { scope: 'jj_web/page_3/' }).then(function(reg) {
     // var counter
     if(reg.installing) {
       console.log('Service worker installing');
@@ -88,7 +88,7 @@ window.addEventListener('load', function() {
   //   console.log('1')
   //   console.log(navigator.onLine)
   //  if(!navigator.onLine){
-  //   window.location.href = "../page_1";
+  //   window.location.href = "..jj_web/page_1";
   //  }
   //  if(navigator.onLine){
   //   setTimeout(function(){online()}, 500);

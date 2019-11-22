@@ -4,7 +4,7 @@ var Gallery = { 'images' : [
       
   {
     'id' : 'page',
-    'url': 'gallery/page.png'
+    'url': 'galleryjj_web/page.png'
   },
 
   {

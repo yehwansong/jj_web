@@ -2,15 +2,15 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('v1').then(function(cache) {
       return cache.addAll([
-        '/page_2/',
-        '/page_2/index.html',
-        '/page_2/style.css',
-        '/page_2/app.js',
-        '/page_2/image-list.js',
-        '/page_2/star-wars-logo.jpg',
-        // '/page_2/gallery/body.png',
-        // '/page_2/gallery/page.png',
-        '/page_2/gallery/title.png'
+        'jj_web/page_2/',
+        'jj_web/page_2/index.html',
+        'jj_web/page_2/style.css',
+        'jj_web/page_2/app.js',
+        'jj_web/page_2/image-list.js',
+        'jj_web/page_2/star-wars-logo.jpg',
+        // 'jj_web/page_2/gallery/body.png',
+        // 'jj_web/page_2/galleryjj_web/page.png',
+        'jj_web/page_2/gallery/title.png'
       ]);
     })
   );
@@ -34,7 +34,7 @@ self.addEventListener('fetch', function(event) {
         });
         return response;
       }).catch(function () {
-        return caches.match('/page_2/gallery/page.png');
+        return caches.match('jj_web/page_2/galleryjj_web/page.png');
       });
     }
   }));
