@@ -66,7 +66,7 @@ window.onload = function() {
 
     }, function(Error) {
       console.log(Error);
-      counter++
+      // counter++
     });
     
   }
