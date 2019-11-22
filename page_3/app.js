@@ -1,8 +1,11 @@
 // register service worker
-
+// navigator.serviceWorker.getRegistrations().then(function(registrations) {
+//  for(let registration of registrations) {
+//   registration.unregister()
+// } })
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/page_2/sw.js', { scope: '/page_2/' }).then(function(reg) {
-    var counter
+  navigator.serviceWorker.register('/page_3/sw.js', { scope: '/page_3/' }).then(function(reg) {
+    // var counter
     if(reg.installing) {
       console.log('Service worker installing');
     } else if(reg.waiting) {
@@ -66,7 +69,7 @@ window.onload = function() {
 
     }, function(Error) {
       console.log(Error);
-      counter++
+      // counter++
     });
     
   }

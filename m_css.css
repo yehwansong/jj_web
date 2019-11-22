@@ -1,0 +1,17 @@
+*{
+	margin:0;
+	padding:0;
+}
+img{
+	width: 100vw;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.all{
+	z-index: 5;
+	display: none;
+}
+.sel{
+	z-index: 10
+}
